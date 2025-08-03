@@ -1,0 +1,14 @@
+### 全局开发环境配置文件 ###
+
+# spring
+spring:
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017 # 数据库端口
+      username: root # 数据库用户名
+      password: pwd@123QWE # 数据库密码
+      authentication-database: admin # 数据库认证数据库
+      database: zhaofd_db # 主业务数据库（存储常规集合）
+      gridfs:
+        database: zhaofd_fs_db # GridFS专属数据库（存放所有文件块）
