@@ -4,11 +4,26 @@
 spring:
   data:
     mongodb:
-      host: 127.0.0.1
-      port: 27017 # 数据库端口
-      username: root # 数据库用户名
-      password: pwd@123QWE # 数据库密码
-      authentication-database: admin # 数据库认证数据库
-      database: zhaofd_db # 主业务数据库（存储常规集合）
+#      ### 属性配置方式(不能配置底层连接池参数) ###
+#      host: 127.0.0.1
+#      port: 27017 # 数据库端口
+#      username: root # 数据库用户名
+#      password: pwd@123QWE # 数据库密码
+#      authentication-database: admin # 数据库认证数据库
+#      database: zhaofd_db # 主业务数据库（存储常规集合）
+#      gridfs:
+#        database: zhaofd_fs_db # GridFS专属数据库（存放所有文件块）
+      ### uri配置方式(可配置底层连接池参数) ###
+      # 原始字符	URL 编码
+      # @		%40
+      # !		%21
+      # #		%23
+      # $		%24
+      # authSource    数据库认证数据库
+      # minPoolSize   最小连接数(默认为0)
+      # maxPoolSize   最大连接数(默认为100)
+      # maxIdleTimeMS 连接空闲多久后关闭(单位：毫秒)
+      uri: mongodb://root:pwd%40123QWE@127.0.0.1:27017/zhaofd_db?authSource=admin&minPoolSize=5&maxPoolSize=10&maxIdleTimeMS=60000
+      # GridFS 单独指定库 (保留原设置)
       gridfs:
-        database: zhaofd_fs_db # GridFS专属数据库（存放所有文件块）
+        database: zhaofd_fs_db
