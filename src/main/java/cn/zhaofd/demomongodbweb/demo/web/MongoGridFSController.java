@@ -14,7 +14,7 @@ import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBo
  * 继承core-spring-mongodb的应用示例
  */
 @RestController
-@RequestMapping("/mongo/gridfs")
+@RequestMapping("/demo/gridfs")
 public class MongoGridFSController {
     private final MongoGridFSService mongoGridFSService;
 
