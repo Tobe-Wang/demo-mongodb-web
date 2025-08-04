@@ -31,6 +31,17 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- 运行时监控，包括端点、线程dump信息、应用程序健康状况和应用程序可用的环境属性等 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!-- 开发工具集，提供自动重启、实时刷新和属性默认值等功能 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+        </dependency>
         <!-- spring-boot结束 -->
 
         <!-- core开始 -->
