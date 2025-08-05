@@ -23,8 +23,7 @@ public class MongoGridFSController {
      *
      * @param mongoGridFSService mongoGridFSService
      */
-    @Autowired
-    public MongoGridFSController(MongoGridFSService mongoGridFSService) {
+    public MongoGridFSController(@Autowired MongoGridFSService mongoGridFSService) {
         this.mongoGridFSService = mongoGridFSService;
     }
 

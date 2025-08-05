@@ -19,8 +19,7 @@ import java.util.List;
 public class PersonController {
 	private final PersonService personService;
 
-	@Autowired
-	public PersonController(PersonService personService) {
+	public PersonController(@Autowired PersonService personService) {
 		this.personService = personService;
 	}
 

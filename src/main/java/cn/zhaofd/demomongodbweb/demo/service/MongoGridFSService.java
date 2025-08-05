@@ -18,8 +18,7 @@ public class MongoGridFSService {
      *
      * @param mongoGridFSRepository mongoGridFSRepository
      */
-    @Autowired
-    public MongoGridFSService(MongoGridFSRepository mongoGridFSRepository) {
+    public MongoGridFSService(@Autowired MongoGridFSRepository mongoGridFSRepository) {
         this.mongoGridFSRepository = mongoGridFSRepository;
     }
 
