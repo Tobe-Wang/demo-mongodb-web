@@ -1,6 +1,6 @@
-package cn.zhaofd.demomongodbweb.demo.service;
+package cn.zhaofd.demomongodbweb.modules.demo.service;
 
-import cn.zhaofd.demomongodbweb.demo.repository.MongoGridFSRepository;
+import cn.zhaofd.demomongodbweb.modules.demo.repository.MongoGridFSRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.gridfs.GridFsResource;
 import org.springframework.stereotype.Service;

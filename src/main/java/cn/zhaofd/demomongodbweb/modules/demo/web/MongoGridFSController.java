@@ -1,7 +1,7 @@
-package cn.zhaofd.demomongodbweb.demo.web;
+package cn.zhaofd.demomongodbweb.modules.demo.web;
 
 import cn.zhaofd.core.spring.mongodb.RestGridFsUtil;
-import cn.zhaofd.demomongodbweb.demo.service.MongoGridFSService;
+import cn.zhaofd.demomongodbweb.modules.demo.service.MongoGridFSService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.gridfs.GridFsResource;
 import org.springframework.http.MediaType;

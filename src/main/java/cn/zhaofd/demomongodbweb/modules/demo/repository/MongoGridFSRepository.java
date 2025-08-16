@@ -1,4 +1,4 @@
-package cn.zhaofd.demomongodbweb.demo.repository;
+package cn.zhaofd.demomongodbweb.modules.demo.repository;
 
 import cn.zhaofd.core.spring.mongodb.core.repository.BaseMongoGridFSRepository;
 import org.springframework.stereotype.Repository;

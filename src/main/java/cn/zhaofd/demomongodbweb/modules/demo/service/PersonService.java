@@ -1,7 +1,7 @@
-package cn.zhaofd.demomongodbweb.demo.service;
+package cn.zhaofd.demomongodbweb.modules.demo.service;
 
-import cn.zhaofd.demomongodbweb.demo.dto.Person;
-import cn.zhaofd.demomongodbweb.demo.repository.PersonRepository;
+import cn.zhaofd.demomongodbweb.modules.demo.dto.Person;
+import cn.zhaofd.demomongodbweb.modules.demo.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +22,7 @@ public class PersonService {
         return personRepository.save(person);
     }
 
-    public Person findByName(String name) {
+    public List<Person> findByName(String name) {
         return personRepository.findByName(name);
     }
 

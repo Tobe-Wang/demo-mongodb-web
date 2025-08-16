@@ -1,4 +1,4 @@
-package cn.zhaofd.demomongodbweb.demo.dto;
+package cn.zhaofd.demomongodbweb.modules.demo.dto;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

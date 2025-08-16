@@ -1,4 +1,4 @@
-package cn.zhaofd.demomongodbweb.demo.dto;
+package cn.zhaofd.demomongodbweb.modules.demo.dto;
 
 public class Location {
     private String place;

@@ -1,8 +1,8 @@
-package cn.zhaofd.demomongodbweb.demo.web;
+package cn.zhaofd.demomongodbweb.modules.demo.web;
 
-import cn.zhaofd.demomongodbweb.demo.dto.Location;
-import cn.zhaofd.demomongodbweb.demo.dto.Person;
-import cn.zhaofd.demomongodbweb.demo.service.PersonService;
+import cn.zhaofd.demomongodbweb.modules.demo.dto.Location;
+import cn.zhaofd.demomongodbweb.modules.demo.dto.Person;
+import cn.zhaofd.demomongodbweb.modules.demo.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -41,7 +41,7 @@ public class PersonController {
 	}
 	
 	@RequestMapping("/findByName")
-	public Person findByName(String name){
+	public List<Person> findByName(String name){
 		return personService.findByName(name);
 	}
 	
